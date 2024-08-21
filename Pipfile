@@ -1,5 +1,5 @@
 [[source]]
-url = "https://artifactory.cloud.capitalone.com/artifactory/api/pypi/pypi-internalfacing/simple/"
+url = "internal_api_call"
 verify_ssl = true
 name = "pypi"
 
