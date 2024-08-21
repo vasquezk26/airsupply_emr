@@ -13,7 +13,7 @@ function refresh_credentials ()
             stale=$(python -c "import sys, datetime; from dateutil import parser; print(parser.isoparse(sys.argv[1]).astimezone(tz=None) < datetime.datetime.now().astimezone(tz=None))" $(echo $line | awk -F' = ' '{print $2}'))
             if [[ "$stale" == "True" ]]; then
                 echo "AWS credentials are expired. Refreshing now..."
-                cloudsentry access get --all --ba BATRADECREDITDATASERVICES --force
+                cloudsentry access get --all --ba my_aws_creds --force
             elif [[ "$stale" == "False" ]]; then
                 # AWS credentials are valid
                 return 0
