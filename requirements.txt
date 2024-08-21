@@ -1,0 +1,11 @@
+-i https://artifactory.cloud.capitalone.com/artifactory/api/pypi/pypi-internalfacing/simple/
+
+hvac
+pyyaml
+urllib3
+pymssql
+requests
+botocore
+boto3==1.24.96
+psycopg2-binary==2.8.6
+secret-sauce-python==0.0.11
