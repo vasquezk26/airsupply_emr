@@ -1,4 +1,4 @@
--i https://artifactory.cloud.capitalone.com/artifactory/api/pypi/pypi-internalfacing/simple/
+-i https://a_simple_api/
 
 hvac
 pyyaml
